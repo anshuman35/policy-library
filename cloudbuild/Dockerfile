@@ -5,6 +5,7 @@
 FROM debian
 
 RUN apt-get update && apt-get install -y build-essential curl python3 python3-pip
+RUN apt-get update && apt-get install
 RUN pip3 install pyyaml
 RUN curl -L -o \
   /usr/local/bin/opa \
